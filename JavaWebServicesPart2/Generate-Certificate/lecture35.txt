@@ -1,0 +1,3 @@
+keytool -genkey -keyalg RSA -sigalg SHA1withRSA -validity 600 -alias myservicekey -keypass skpass -storepass sspass -keystore serviceKeystore.jks -dname "cn=Bharath"
+
+keytool -genkey -keyalg RSA -sigalg SHA1withRSA -validity 600 -alias myclientkey  -keypass ckpass -storepass cspass -keystore clientKeystore.jks -dname "cn=Bharath"
